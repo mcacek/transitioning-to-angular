@@ -1,0 +1,11 @@
+.reveal
+  .slides
+    section(data-state="title")
+      h1(style="font-size: 2.46em") transitioning to angular
+      h2 June 6, 2017
+    section(*ngFor="let slideDeck of slides;")
+      section(*ngFor="let slide of slideDeck")
+        dynamic-html([content]="slide")
+    section(data-state="title")
+      h1 Thanks!
+      h2 Any questions?
